@@ -20,12 +20,13 @@ public class LoginFragment extends Fragment {
 
     private NavDirections mActionJoinFragment = LoginFragmentDirections.actionLoginFragmentToJoinFragment();
     private LoginViewModel mLoginViewModel;
+    FragmentLoginBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container,
                              Bundle savedInstanceState) {
-        FragmentLoginBinding binding = DataBindingUtil.inflate(
+         binding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_login, container, false);
         mLoginViewModel = new LoginViewModel();
         binding.setViewModel(mLoginViewModel);

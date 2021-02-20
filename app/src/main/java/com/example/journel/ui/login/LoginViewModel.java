@@ -15,6 +15,8 @@ public class LoginViewModel extends ViewModel {
 //3.
     public LiveData<Event<Unit>> navigateToJoinEvent = _navigateToJoinEvent;
 //1.LiveData의 타입중 이벤트타입 만드는 중
+
+
     public void navigateToJoin() {
         //4.
         _navigateToJoinEvent.setValue( new Event<>( Unit.INSTANCE ) );
